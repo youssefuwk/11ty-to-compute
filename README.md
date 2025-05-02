@@ -82,7 +82,7 @@ Hit the **🚀 Publish** button and watch the Terminal output for your new site 
 
 Open it in a new tab and tell everyone you know. 📣
 
-🎢 Whenever you update your content, like adding a new blog post, hit the **🚀 Publish** button again to publish to Fastly!
+🎢 Whenever you update your content, like adding a new blog post, hit the **🚀 Publish** button again to go live!
 
 ## How this project works 🧐
 
