@@ -22,7 +22,7 @@ if [ "$answer" != "${answer#[Yy]}" ] ; then
         npm run fastly:publish || { echo 'Oops! Something went wrong publishing your content.. 😭'; exit 1; }
         readarray -t lines < <(npx --yes @fastly/cli domain list --version=latest)
         IFS='   ' read -r -a array <<< "${lines[1]}"
-        echo "Woohoo check out your site at https://${array[2]} 🪩 🛼 🎏"
+        printf "\nWoohoo check out your site at https://${array[2]} 🪩 🛼 🎏\n\n"
     fi
 else
     exit 1
