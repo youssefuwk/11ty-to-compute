@@ -27,7 +27,6 @@
     "vscode": {
       "extensions": [
         "jkearins.action-buttons-ext@0.1.1",
-        "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint"
       ],
       "settings": {
@@ -37,7 +36,6 @@
           "node_modules/": true
         },
         "editor.minimap.enabled": false,
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "actionButtons": {
           "commands": [
             {
