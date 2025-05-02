@@ -110,7 +110,6 @@ Your app only needs deployed to Fastly once, after that we just update the new c
 This project uses the following extensions from the dev community! 🙌
 
 * [VSCode Action Buttons Ext](https://marketplace.visualstudio.com/items?itemName=jkearins.action-buttons-ext)
-* [Prettier Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Keep going! 🛸
