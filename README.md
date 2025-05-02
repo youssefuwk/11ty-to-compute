@@ -16,6 +16,8 @@ In this guide we'll show you how to deploy your blog to <a href="https://www.fas
 
 **Fork** your own copy of [this repo](https://github.com/glitchdotcom/11ty-to-compute), click **Code** > **Codespaces** and create a new Codespace to edit the project.
 
+<img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/>
+
 Give the Codespace a minute or two to start up – it'll automatically build and run your new website, opening a preview to see your site update as you edit! 
 
 ![The blog in a Codespace](https://github.com/user-attachments/assets/a86b11ed-76d5-4f74-9918-617e164d5c73)
