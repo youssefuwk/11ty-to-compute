@@ -12,7 +12,7 @@
       "label": "Compute",
       "onAutoForward": "openPreview"
     },
-    "8080": {
+    "8080-8090": {
       "label": "Eleventy",
       "onAutoForward": "openPreview"
     }
