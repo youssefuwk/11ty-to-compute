@@ -82,7 +82,9 @@ Back in your Codespace, you should see a prompt to reload for the new environmen
 
 Hit the **🚀 Publish** button and watch the Terminal output for your new site address!
 
-Open it in a new tab and tell everyone you know. 📣
+![New Compute app address in the Terminal](https://github.com/user-attachments/assets/0a5a8f84-4907-4d60-83da-d3b90e745562)
+
+You'll see your new `*.edgecompute.app` address in the output. Open it in a new tab and tell everyone you know. 📣
 
 🎢 Whenever you update your content, like adding a new blog post, hit the **🚀 Publish** button again to go live!
 
