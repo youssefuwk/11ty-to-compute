@@ -10,7 +10,18 @@ This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweig
 
 In this guide we'll show you how to deploy your blog to <a href="https://www.fastly.com/products/edge-compute" target="_blank">Fastly Compute</a> for super fast performance – your great posts will immediately be available for everyone, everywhere all at once. 🪄
 
-> You can alternatively deploy your blog to other platforms, like <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. 
+> You can alternatively deploy your blog to other platforms, like <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+## In this doc
+
+* [Remix your own blog](#remix-your-own-blog)
+* [Get to know your blog](#get-to-know-your-blog)
+  * [Share your draft site](#share-your-draft-site)
+* [Deploy your blog to Fastly Compute](#deploy-your-blog-to-fastly-compute)
+* [Save your edits to GitHub](#save-your-edits-to-github)
+* [How this project works](#how-this-project-works-)
+  * [Extensions](#extensions)
+* [Keep going! 🚀](#keep-going-)
 
 ## Remix your own blog
 
@@ -123,7 +134,7 @@ Your app only needs deployed to Fastly once, after that we just update the new c
 
 🧰 You'll find the Fastly CLI commands we use under the hood in the `helpers/publish.sh` script.
 
-## Extensions
+### Extensions
 
 This project uses the following extensions from the dev community! 🙌
 
