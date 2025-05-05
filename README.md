@@ -4,8 +4,6 @@ Oh hi! Welcome to your new blog. 🎡
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/glitchdotcom/11ty-to-compute)
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=976617964)
-
 **You can publish this site to Fastly for free!**
 
 This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator that builds plain HTML files for quick loading by your visitors.
@@ -16,7 +14,7 @@ In this guide we'll show you how to deploy your blog to <a href="https://www.fas
 
 ## Remix your own blog
 
-**Fork** your own copy of [this repo](https://github.com/glitchdotcom/11ty-to-compute), click **Code** > **Codespaces** and create a new Codespace to edit the project.
+When you click the **Open in GitHub Codespaces** button in [this repository](https://github.com/glitchdotcom/11ty-to-compute), GitHub will clone the repo into your account and create a new Codespace for you to edit it. Once you have your own copy of the repo, you can click **Code** > **Codespaces** at any time. Make sure you **commit** any changes you make if you want to keep them in your repo as GitHub will only keep your Codespace for a limited time.
 
 <img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/>
 
