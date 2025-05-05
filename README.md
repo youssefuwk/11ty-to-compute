@@ -25,11 +25,11 @@ In this guide we'll show you how to deploy your blog to <a href="https://www.fas
 
 ## Remix your own blog
 
-When you click the **Open in GitHub Codespaces** button in [this repository](https://github.com/glitchdotcom/11ty-to-compute), GitHub will clone the repo into your account and create a new Codespace for you to edit it. Once you have your own copy of the repo, you can click **Code** > **Codespaces** at any time. Make sure you **commit** any changes you make if you want to keep them in your repo as GitHub will only keep your Codespace for a limited time.
+When you click the **Open in GitHub Codespaces** button in [this repository](https://github.com/glitchdotcom/11ty-to-compute), GitHub will clone the repo into your account and create a new Codespace for you to edit it. Once you have your own copy of the repo, you can click **Code** > **Codespaces** at any time. _Make sure you [save any changes you make](#save-your-edits-to-github) if you want to keep them in your repo as GitHub will only keep your Codespace for a limited time._
 
-<img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/>
+<img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/><br/>
 
-Give the Codespace a minute or two to start up – it'll automatically build and run your new website, opening a preview to see your site update as you edit! 
+Give the Codespace a minute or two to start up – it'll automatically build and run your new website, opening a preview to show your site update as you edit! 
 
 ![The blog in a Codespace](https://github.com/user-attachments/assets/a86b11ed-76d5-4f74-9918-617e164d5c73)
 
@@ -133,6 +133,8 @@ Your app only needs deployed to Fastly once, after that we just update the new c
 ⚙️ The settings we use to create the guided experience in Codespaces are in the `.devcontainer/` folder.
 
 🧰 You'll find the Fastly CLI commands we use under the hood in the `helpers/publish.sh` script.
+
+💻 There are multiple processes running in the **Terminal** – this is to run your site locally in the Codespace and run the Fastly commands.
 
 ### Extensions
 
