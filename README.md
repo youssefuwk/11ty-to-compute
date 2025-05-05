@@ -4,6 +4,8 @@ Oh hi! Welcome to your new blog. 🎡
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/glitchdotcom/11ty-to-compute)
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=976617964)
+
 **You can publish this site to Fastly for free!**
 
 This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator that builds plain HTML files for quick loading by your visitors.
