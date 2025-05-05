@@ -59,7 +59,7 @@ Change `private` to `public` by right clicking your running port and choosing fr
 
 Copy the URL to your clipboard and share it 📋.
 
-![Copy the URL](https://github.com/user-attachments/assets/a4704062-29e1-45b4-91e7-02599f001967)
+<img alt="Copy the URL" src="https://github.com/user-attachments/assets/a4704062-29e1-45b4-91e7-02599f001967" width="600px"/>
 
 ## Deploy your blog to Fastly Compute
 
@@ -89,6 +89,24 @@ Hit the **🚀 Publish** button and watch the Terminal output for your new site 
 You'll see your new `*.edgecompute.app` address in the output. Open it in a new tab and tell everyone you know. 📣
 
 🎢 Whenever you update your content, like adding a new blog post, hit the **🚀 Publish** button again to go live!
+
+## Save your edits to GitHub
+
+GitHub will keep the edits you make in the Codespace only for a limited time, so each time you finish an editing session it's best to commit your work to a branch. You can commit directly to your main repo branch, but you'll find it easier to revert changes later if you need to by saving your edits to a new branch:
+
+* In your Codespace, click the branch name at the bottom (by default it'll be `main`).
+* Choose **Create new branch from** and select the `HEAD` option.
+* Give your new branch a name.
+* Push your changes to GitHub, choosing your repo as the remote when prompted.
+  * <img src="https://github.com/user-attachments/assets/03cddf4f-3c90-4c80-999f-ab40e8aa7ea4" alt="push changes" width="300px"/>
+* This will copy your edits to the branch – you can go ahead and create a Pull Request by clicking the notification in your Codespace.
+  * Choose your repo as the base (not the Glitch one you forked) and open the Pull Request.
+  * You can go ahead and merge from inside the Codespace.
+    * ![Image](https://github.com/user-attachments/assets/3ecd5da2-16f1-4ccb-97c9-8b715d964d42)
+
+> GitHub will notify you if any of your Codespaces are about to expire. If you have changes you want to keep, you can use the **Export changes to a branch** option.
+> 
+> <img alt="export to branch" width="600px" src="https://github.com/user-attachments/assets/c7815347-3e5a-4e34-97f2-db58343acaa4"/>
 
 ## How this project works 🧐
 
