@@ -74,7 +74,7 @@ GitHub will keep the edits you make in the codespace only for a limited time, so
 
 Now you'll have a shiny new repository for your blog in your GitHub account.
 
-> For future changes, you can either commit directly to your main branch, or push your changes to a new branch and open a Pull Request each time you make a set of edits you want to merge.
+> For future changes, you can either commit directly to your main branch (and **Sync** to push your changes to your repo), or push your changes to a new branch and open a Pull Request each time you make a set of edits you want to merge.
 
 In your new repo, you can open the site in a codespace again at any time by clicking **Code** > **Codespaces**. 
 
