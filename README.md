@@ -2,8 +2,6 @@
 
 Oh hi! Welcome to your new blog. 🎡
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/glitchdotcom/11ty-to-compute)
-
 This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator that builds plain HTML files for quick loading by your visitors.
 
 **In this guide we'll show you how to deploy your blog to <a href="https://www.fastly.com/products/edge-compute" target="_blank">Fastly Compute</a> for free – your amazing posts will immediately be available for everyone, everywhere all at once. 🪄**
@@ -23,7 +21,9 @@ This project is a blog powered by [Eleventy](https://www.11ty.dev/), a lightweig
 
 ## Remix your own blog
 
-When you click the **Open in GitHub Codespaces** button in [this repository](https://github.com/glitchdotcom/11ty-to-compute), GitHub will clone the repo into your account and create a new Codespace for you to edit it. Once you have your own copy of the repo, you can click **Code** > **Codespaces** at any time. _Make sure you [save any changes you make](#save-your-edits-to-github) if you want to keep them in your repo as GitHub will only keep your Codespace for a limited time._
+Fork [this repository](https://github.com/glitchdotcom/11ty-to-compute) to get your own copy. In your new repo, click **Code** > **Codespaces**. 
+
+_Make sure you [save any changes you make](#save-your-edits-to-github) if you want to keep them in your repo as GitHub will only keep your Codespace for a limited time._
 
 <img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/><br/>
 
@@ -77,7 +77,7 @@ Ready to share your site with the world? Deploy it to Fastly!
 Grab a Fastly API key from your account and add it to your GitHub repo:
 
 - Sign up for a <strong><a href="https://www.fastly.com/signup/" target="_blank">free Fastly developer account</a></strong>
-- Grab an **API Token** from **Account** > **Personal Profile** > **API Tokens** > **Create Token**
+- Grab an **API Token** from **Account** > **API Tokens** > **Personal Tokens** > **Create Token**
   - _Type_: Automation
   - _Role_: Engineer
   - _Scope_: Global (deselect the _Read-only access_ box)
