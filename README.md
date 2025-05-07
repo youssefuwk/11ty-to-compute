@@ -2,8 +2,6 @@
 
 Oh hi! Welcome to your new blog. 🎡
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/glitchdotcom/11ty-to-compute)
-
 This project is powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator that builds plain HTML files for quick loading by your visitors.
 
 **In this guide we'll learn how to deploy your blog to <a href="https://www.fastly.com/products/edge-compute" target="_blank">Fastly Compute</a> for free – your amazing posts will immediately be available for everyone, everywhere all at once. 🪄**
@@ -15,15 +13,19 @@ This project is powered by [Eleventy](https://www.11ty.dev/), a lightweight stat
 * [Remix your own blog](#remix-your-own-blog)
 * [Get to know your blog](#get-to-know-your-blog)
   * [Share your draft site](#share-your-draft-site)
-* [Save your edits to GitHub](#save-your-project-to-github)
 * [Deploy your blog to Fastly Compute](#deploy-your-blog-to-fastly-compute)
+* [Save your edits to GitHub](#save-your-edits-to-github)
 * [How this project works](#how-this-project-works-)
   * [Extensions](#extensions)
 * [Keep going! 🚀](#keep-going-)
 
 ## Remix your own blog
 
-Click the **Open in GitHub Codespaces** button in [this repository](https://github.com/glitchdotcom/11ty-to-compute/) and create a new codespace to edit your project.
+**Fork** [this repository](https://github.com/glitchdotcom/11ty-to-compute/) to create your own copy of the site.
+
+In your fork, open the site in a codespace by clicking **Code** > **Codespaces** and creating a new codespace on your main branch. 
+
+<img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/><br/>
 
 Give the codespace a minute or two to start up – it'll automatically build and preview your new website! 
 
@@ -70,31 +72,6 @@ Copy the URL to your clipboard and share it 📋.
 
 <img alt="Copy the URL" src="https://github.com/user-attachments/assets/a4704062-29e1-45b4-91e7-02599f001967" width="600px"/>
 
-## Save your project to GitHub
-
-GitHub will keep the edits you make in the codespace only for a limited time, so it's a good idea to commit your work to a repo regularly. 
-
-* Open the **Source Control** for your project from the button on the left of the editor.
-  * <img src="https://github.com/user-attachments/assets/63297c66-a2ac-473e-8727-0be984af6b92" alt="commit ui" width="400px"/>
-* Enter some text describing your edits and click **Commit**
-  * Click **Yes** to confirm you want to stage and commit
-  * <img src="https://github.com/user-attachments/assets/11561fb6-d33a-4e8c-9626-c9359fa35759" alt="stage and commit" width="500px"/>
-* Click **Publish Branch**
-  * <img src="https://github.com/user-attachments/assets/62ccfa7e-e2fd-47ea-8a37-bb89d14065b9" alt="publish branch" width="350px"/>
-  * Choose `origin` to create a new fork for your project
-    * <img src="https://github.com/user-attachments/assets/6bdf6616-b4e1-4ad8-9d10-77a4170adbf5" alt="origin" width="650px"/>
-
-Now you'll have a shiny new repository for your blog in your GitHub account.
-
-> For future changes, you can either commit directly to your main branch (and **Sync** to push your changes to your repo), or push your changes to a new branch and open a Pull Request each time you make a set of edits you want to merge.
-
-In your new repo, you can open the site in a codespace again at any time by clicking **Code** > **Codespaces**. 
-
-<img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/><br/>
-
-> GitHub will notify you if any of your codespaces are about to expire. If you have changes you want to keep, you can use the **Export changes to a branch** option.
-> 
-> <img alt="export to branch" width="500px" src="https://github.com/user-attachments/assets/c7815347-3e5a-4e34-97f2-db58343acaa4"/>
 
 ## Deploy your blog to Fastly Compute
 
@@ -124,6 +101,14 @@ Hit the **🚀 Publish** button at the bottom of the editor, enter `y` and watch
 You'll see your new `*.edgecompute.app` address in the output. Open it in a new tab and tell everyone you know about your new site. 📣
 
 🎢 Whenever you update your content, like adding a new blog post, hit the **🚀 Publish** button again to go live!
+
+## Save your edits to GitHub
+
+GitHub will keep the edits you make in the codespace only for a limited time, so it's a good idea to commit your work to a repo regularly. Use the **Source Control** button on the left of the editor – you can make commits, open and merge pull requests right inside the codespace. 
+
+> GitHub will notify you if any of your codespaces are about to expire. If you have changes you want to keep, you can use the **Export changes to a branch** option.
+> 
+> <img alt="export to branch" width="500px" src="https://github.com/user-attachments/assets/c7815347-3e5a-4e34-97f2-db58343acaa4"/>
 
 ## How this project works 🧐
 
