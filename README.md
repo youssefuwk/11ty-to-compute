@@ -34,7 +34,7 @@ Give the codespace a minute or two to start up – it'll automatically build and
 * When your website preview opens, click the **🔎 Split** button at the bottom so that you can see the site side by side with your code.
 * _You can close [x] the **Terminal** while you work._
 
-Make sure you [save your changes to your own fork](#save-your-project-to-github) if you want to keep them.
+Make sure you [save your changes to GitHub](#save-your-edits-to-github).
 
 ## Get to know your blog
 
