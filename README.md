@@ -86,13 +86,17 @@ Grab a Fastly API key from your account and add it to your GitHub repo:
   - _Scope_: Global (deselect the _Read-only access_ box)
   - _Access_: All services
   - _Expiration_: Never expire
-- **Copy the token value into your GitHub repo**
-  - Open **Settings** > **Secrets and Variables** > **Codespaces**
-  - Create a **New repository secret**
+- **Copy the token value into GitHub**
+  - Back in your codespace, click into the textfield at the top of the editor and type `>` to access the command palette
+  - Type `secret` and select **Codespaces: Manage user secrets**
+    - <img alt="Secret command" src="https://github.com/user-attachments/assets/a6cfeac8-2aca-40a4-ab41-d207733b61cc" width="300px"/>
+  - Click **+ Add a new secret**
+    - <img alt="Add new secret" src="https://github.com/user-attachments/assets/350e545c-0073-4327-ac99-3663049e7aad" width="400px"/>
   - Enter the name `FASTLY_API_TOKEN`
-  - Paste your token value and click **Add secret**
+    - <img alt="Fastly token" src="https://github.com/user-attachments/assets/536d1b2a-bf62-4085-aac4-ade7d2898583" width="400px"/>
+  - Paste your token value and enter
 
-Back in your codespace, you should see a prompt to reload for the new environment variable, so go ahead and click that (otherwise click the little bell 🔔 icon at the bottom right to check for the notification).
+In the noticiations area at the bottom right of your codespace, you should see a prompt to **reload** for the new environment variable, so go ahead and click that (otherwise click the little bell 🔔 icon to check for the message).
 
 Hit the **🚀 Publish** button at the bottom of the editor, enter `y` and watch the **Terminal** output for your new site address! It might take a couple of minutes... 🥁
 
