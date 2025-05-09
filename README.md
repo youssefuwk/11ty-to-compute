@@ -64,7 +64,7 @@ The files you'll want to edit are most likely in the `source` and `assets` direc
 
 You can share links to your draft site with collaborators – click **🔗 Share** at the bottom of the editor. The terminal output will include a link you can right-click and copy to share with anyone you like! 
 
-> This project includes the handy shortcut button but you can access these details in other codespaces in **💻 Terminal** > **PORTS**.
+> This project includes a handy shortcut button for grabbing your preview URL but it might be a wee bit error prone 😅 you can also access these details in **💻 Terminal** > **PORTS**.
 >
 > Change `private` to `public` by right-clicking your running port and choosing from the options.
 >
