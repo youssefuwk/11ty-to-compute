@@ -62,16 +62,17 @@ The files you'll want to edit are most likely in the `source` and `assets` direc
 
 ### Share your draft site 
 
-You can share links to your draft site with collaborators by opening **💻 Terminal** > **PORTS**.
+You can share links to your draft site with collaborators – click **🔗 Share** at the bottom of the editor. The terminal output will include a link you can right-click and copy to share with anyone you like! 
 
-Change `private` to `public` by right-clicking your running port and choosing from the options.
-
-![Change the port settings](https://github.com/user-attachments/assets/31802b6e-b766-4b5b-8b59-529d31fdf4ee)
-
-Copy the URL to your clipboard and share it 📋.
-
-<img alt="Copy the URL" src="https://github.com/user-attachments/assets/a4704062-29e1-45b4-91e7-02599f001967" width="600px"/>
-
+> This project includes the handy shortcut button but you can access these details in other codespaces in **💻 Terminal** > **PORTS**.
+>
+> Change `private` to `public` by right-clicking your running port and choosing from the options.
+>
+> ![Change the port settings](https://github.com/user-attachments/assets/31802b6e-b766-4b5b-8b59-529d31fdf4ee)
+>
+> Copy the URL to your clipboard and share it 📋.
+> 
+> <img alt="Copy the URL" src="https://github.com/user-attachments/assets/a4704062-29e1-45b4-91e7-02599f001967" width="600px"/>
 
 ## Deploy your blog to Fastly Compute
 
