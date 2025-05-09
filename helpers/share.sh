@@ -6,7 +6,7 @@ for i in "${lines[@]}"
 do
     read -ra entries <<<"$i"
     code=$(curl -s -o /dev/null -w "%{http_code}" ${entries[-1]})
-    if [[ ${code} == 200 ]] ; then
+    if [[ ${code} -lt 400 ]] ; then
         echo "📣 Share your website preview by copying this URL: ${entries[-1]}"
         break
     fi
