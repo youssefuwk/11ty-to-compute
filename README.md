@@ -29,7 +29,7 @@ In your fork, open the site in a codespace by clicking **Code** > **Codespaces**
 
 Give the codespace a minute or two to start up – it'll automatically build and preview your new website! 
 
-![The blog in a Codespace](https://github.com/user-attachments/assets/a86b11ed-76d5-4f74-9918-617e164d5c73)
+![The blog in a Codespace](https://github.com/user-attachments/assets/d6e5de9f-9e82-4d82-8580-983839386ee0)
 
 * When your website preview opens, click the **🔎 Split** button at the bottom so that you can see the site side by side with your code.
 * _You can close [x] the **Terminal** while you work._
