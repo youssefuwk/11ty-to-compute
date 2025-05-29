@@ -60,7 +60,7 @@ module.exports = function (eleventyConfig) {
       input: "source",
       includes: "_layouts",
       data: "_data",
-      output: "_site",
+      output: "./deploy/_site",
     },
   };
 };
