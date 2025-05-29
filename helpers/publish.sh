@@ -22,7 +22,7 @@ else
     printf "${CONFIRM}"
     read answer
     if [ "$answer" != "${answer#[Yy]}" ]; then 
-        npm run start
+        npm run build
         # check for an existing app folder and if not create one
         if [ ! -d './deploy/_app' ]; then
             npx --yes @fastly/compute-js-static-publish@latest --root-dir=./_site --output=./deploy/_app --kv-store-name="${PROJECT}-content" --name="${PROJECT}"
