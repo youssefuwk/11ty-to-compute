@@ -10,7 +10,7 @@ This project is powered by [Eleventy](https://www.11ty.dev/), a lightweight stat
 
 ## In this doc
 
-* [Remix your own blog](#remix-your-own-blog)
+* [Fork your own blog](#fork-your-own-blog)
 * [Get to know your blog](#get-to-know-your-blog)
   * [Share your draft site](#share-your-draft-site)
 * [Deploy your blog to Fastly Compute](#deploy-your-blog-to-fastly-compute)
@@ -19,7 +19,7 @@ This project is powered by [Eleventy](https://www.11ty.dev/), a lightweight stat
   * [Extensions](#extensions)
 * [Keep going! 🚀](#keep-going-)
 
-## Remix your own blog
+## Fork your own blog
 
 **Fork** [this repository](https://github.com/glitchdotcom/11ty-to-compute/) to create your own copy of the site.
 
