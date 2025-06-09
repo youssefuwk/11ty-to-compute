@@ -52,7 +52,7 @@ The files you'll want to edit are most likely in the `source` and `assets` direc
 
 🖼️ Add images in the `assets/` folder – you'll find an example of including an image in a post in `source/posts/fourth-post.md`.
 
-![Editing a post](https://github.com/user-attachments/assets/5a972e39-c9c7-48f6-b3f0-00e7c5aa52a7)
+![Images in a post](https://github.com/user-attachments/assets/9f5e86e1-b5dd-43f5-b826-f535ede36894)
 
 > 🚨⚠️ Danger zone: There are directories in the project that might break your site... 😱😈
 >
