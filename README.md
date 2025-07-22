@@ -1,156 +1,248 @@
-# Hello 11ty!
+<!DOCTYPE html>    <html dir="rtl" lang="ar">        <head>        
+  <meta charset="UTF-8" />        
+  <title>خلفية فضائية فقط</title>        
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+  <style>        
+    * { margin:0; padding:0; box-sizing:border-box; }        
+    html, body {        
+      height:100vh; overflow:hidden;        
+      background: linear-gradient(135deg, #020c36, #1a0050);        
+      position:relative;        
+    }      html::before {        
+  content: '';        
+  position: absolute;        
+  inset: 0;        
+  background: linear-gradient(135deg, rgba(0,229,255,0.4), rgba(213,0,249,0.4));        
+  mix-blend-mode: screen;        
+  z-index: 0;        
+  pointer-events: none;        
+  filter: brightness(1.3) saturate(2);        
+}        body::before {
+content: '';
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+background:
+radial-gradient(circle at bottom right, rgba(0,255,255,0.25), transparent 70%),
+radial-gradient(circle at 20% 30%, rgba(255,0,255,0.12), transparent 70%),
+radial-gradient(circle at 70% 10%, rgba(0,200,255,0.1), transparent 70%);
+filter: blur(80px);
+mix-blend-mode: screen;
+z-index: 0;
+pointer-events: none;
+}
 
-Oh hi! Welcome to your new blog. 🎡
+/* ✅ طبقة تعزيز ألوان الخلفية */
+body::after {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, #051442cc, #2b007ecc);
+z-index: -1;
+pointer-events: none;
+mix-blend-mode: soft-light;
+opacity: 1;
+}
 
-This project is powered by [Eleventy](https://www.11ty.dev/), a lightweight static site generator that builds plain HTML files for quick loading by your visitors.
+.stars1, .stars2, .stars3 {
+content: ''; position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background-repeat: repeat;
+opacity: 0.15;
+z-index: 0;
+}
 
-**In this guide we'll learn how to deploy your blog to <a href="https://www.fastly.com/products/edge-compute" target="_blank">Fastly Compute</a> for free – your amazing posts will immediately be available for everyone, everywhere all at once. 🪄**
+.stars1 {
+background-image: radial-gradient(white 0.7px, transparent 1px);
+background-size: 120px 120px;
+animation: twinkle 5s ease-in-out infinite alternate, moveStars1 45s linear infinite;
+}
 
-> You can alternatively deploy your blog to other platforms, like <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+.stars2 {
+background-image: radial-gradient(white 1px, transparent 1px);
+background-size: 160px 160px;
+animation: twinkle 6s ease-in-out infinite alternate, moveStars2 70s linear infinite;
+}
 
-## In this doc
+.stars3 {
+background-image: radial-gradient(white 1.2px, transparent 1px);
+background-size: 220px 220px;
+animation: twinkle 7s ease-in-out infinite alternate, moveStars3 90s linear infinite;
+}
 
-* [Fork your own blog](#fork-your-own-blog)
-* [Get to know your blog](#get-to-know-your-blog)
-  * [Share your draft site](#share-your-draft-site)
-* [Deploy your blog to Fastly Compute](#deploy-your-blog-to-fastly-compute)
-* [Save your edits to GitHub](#save-your-edits-to-github)
-* [How this project works](#how-this-project-works-)
-  * [Extensions](#extensions)
-* [Keep going! 🚀](#keep-going-)
+@keyframes twinkle {
+0%, 100% { opacity: 0.15; }
+50% { opacity: 0.25; }
+}
 
-## Fork your own blog
+@keyframes moveStars1 {
+0% { background-position: 0 0; }
+100% { background-position: -300px 150px; }
+}
 
-**Fork** [this repository](https://github.com/glitchdotcom/11ty-to-compute/) to create your own copy of the site.
+@keyframes moveStars2 {
+0% { background-position: 100px 0; }
+100% { background-position: -200px 200px; }
+}
 
-In your fork, open the site in a codespace by clicking **Code** > **Codespaces** and creating a new codespace on your main branch. 
+@keyframes moveStars3 {
+0% { background-position: 0 100px; }
+100% { background-position: 250px -250px; }
+}
 
-<img alt="Create codespace" src="https://github.com/user-attachments/assets/cb29a8da-d1ac-42f5-962c-7d43b8011324" width="400px"/><br/>
+.shooting-star {
+position: absolute;
+width: 120px;
+height: 2px;
+background: linear-gradient(90deg, white, transparent);
+border-radius: 50%;
+opacity: 0;
+z-index: 1;
+will-change: transform, opacity;
+transform: rotate(-45deg);
+animation-name: shooting;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+}
 
-Give the codespace a minute or two to start up – it'll automatically build and preview your new website! 
+@keyframes shooting {
+0% {
+transform: translate(0, 0) rotate(-45deg);
+opacity: 0;
+}
+10% {
+opacity: 1;
+}
+100% {
+transform: translate(-700px, 700px) rotate(-45deg);
+opacity: 0;
+}
+}
 
-![The blog in a Codespace](https://github.com/user-attachments/assets/d6e5de9f-9e82-4d82-8580-983839386ee0)
+.random-star {
+position: absolute;
+width: 2px;
+height: 2px;
+background: white;
+border-radius: 50%;
+opacity: 0;
+animation: randomFlicker 10s infinite ease-in-out;
+}
 
-* When your website preview opens, click the **🔎 Split** button at the bottom so that you can see the site side by side with your code.
-* _You can close [x] the **Terminal** while you work._
+@keyframes randomFlicker {
+0%, 100% { opacity: 0; }
+5% { opacity: 1; }
+10% { opacity: 0; }
+30% { opacity: 1; }
+35% { opacity: 0; }
+70% { opacity: 1; }
+75% { opacity: 0; }
+}
 
-Make sure you [save your changes to GitHub](#save-your-edits-to-github).
+.animated-blue-layer {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 1;
+background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(0,229,255,0.18), transparent 80%);
+filter: blur(160px);
+animation: moveGlow 80s infinite ease-in-out;
+mix-blend-mode: screen;
+will-change: opacity, transform;
+}
 
-## Get to know your blog
+@keyframes moveGlow {
+0% { --x: 10%; --y: 20%; opacity: 0.05; }
+20% { --x: 50%; --y: 30%; opacity: 0.1; }
+40% { --x: 80%; --y: 40%; opacity: 0.2; }
+60% { --x: 60%; --y: 70%; opacity: 0.15; }
+80% { --x: 30%; --y: 60%; opacity: 0.1; }
+100% { --x: 10%; --y: 20%; opacity: 0.05; }
+}
 
-You can make edits in the files by opening them from the left sidebar. Your blog preview will update as you work!
+.big-twinkling-stars {
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+pointer-events: none;
+z-index: 2;
+}
 
-The files you'll want to edit are most likely in the `source` and `assets` directories:
+.big-twinkling-stars span {
+position: absolute;
+width: 3px;
+height: 3px;
+background: white;
+border-radius: 50%;
+box-shadow: 0 0 6px 1px rgba(255,255,255,0.6);
+opacity: 0;
+animation: bigTwinkle 5s infinite ease-in-out;
+}
 
-📝 Edit the post content and add new posts using Markdown `.md` files in `source/posts`.
+@keyframes bigTwinkle {
+0%, 100% { opacity: 0; transform: scale(0.7); }
+50% { opacity: 1; transform: scale(1); }
+}
 
-💡 Change your site HTML in the `source/_layouts` Nunchucks `.njk` files.
+/* تحسين جودة الريندر */
+.animated-blue-layer,
+.stars1,
+.stars2,
+.stars3,
+body::before,
+html::before {
+backface-visibility: hidden;
+transform: translateZ(0);
+will-change: opacity, transform;
+image-rendering: optimizeQuality;
+}
 
-🎨 Change your site style rules in `assets/style.css`.
+  </style>        
+</head>        
+<body>        
+  <div class="animated-blue-layer"></div>        
+  <div class="stars1"></div>        
+  <div class="stars2"></div>        
+  <div class="stars3"></div>        <!-- Shooting Stars -->        <div class="shooting-star" style="top:10%; left:85%; animation-delay:0s; animation-duration:1.2s;"></div>        
+  <div class="shooting-star" style="top:15%; left:10%; animation-delay:7s; animation-duration:1.3s;"></div>        
+  <div class="shooting-star" style="top:10%; left:85%; animation-delay:14s; animation-duration:1.2s;"></div>        
+  <div class="shooting-star" style="top:15%; left:10%; animation-delay:15s; animation-duration:1.3s;"></div>        
+  <div class="shooting-star" style="top:10%; left:85%; animation-delay:21s; animation-duration:1.2s;"></div>        
+  <div class="shooting-star" style="top:15%; left:10%; animation-delay:28s; animation-duration:1.3s;"></div>        
+  <div class="shooting-star" style="top:10%; left:85%; animation-delay:35s; animation-duration:1.2s;"></div>        
+  <div class="shooting-star" style="top:15%; left:10%; animation-delay:36s; animation-duration:1.3s;"></div>        <!-- Random flickering stars -->        <div class="random-star" style="top:8%; left:20%; animation-delay:2s;"></div>        
+  <div class="random-star" style="top:30%; left:40%; animation-delay:4s;"></div>        
+  <div class="random-star" style="top:50%; left:15%; animation-delay:1s;"></div>        
+  <div class="random-star" style="top:60%; left:70%; animation-delay:3s;"></div>        
+  <div class="random-star" style="top:80%; left:35%; animation-delay:5s;"></div>        
+  <div class="random-star" style="top:25%; left:75%; animation-delay:6s;"></div>        <!-- نجوم لامعة عشوائية -->        <div class="big-twinkling-stars" id="bigStars"></div>        <!-- سكريبت توليد النجوم العشوائية -->    <script>      
+    const container = document.getElementById('bigStars');      
+    const starCount = 20;      for (let i = 0; i < starCount; i++) {      
+  const star = document.createElement('span');      
+  star.style.top = Math.random() * 100 + '%';      
+  star.style.left = Math.random() * 100 + '%';      
+  star.style.animationDelay = (Math.random() * 10).toFixed(2) + 's';      
+  star.style.animationDuration = (Math.random() * 5 + 3).toFixed(2) + 's';      
+  container.appendChild(star);      
+}    
 
-ℹ️ Edit the metadata for your site, like the title and description, in the `source/_data` folder JSON file.
+// ✨ نجوم إضافية خفيفة في الأعلى يمين وشمال (بعد التعديل)    
+const extraStars = 6;    
+for (let i = 0; i < extraStars; i++) {    
+  const star = document.createElement('span');    
+  star.style.top = (Math.random() * 20) + '%';    
+  star.style.left = (Math.random() < 0.5 ? Math.random() * 15 : 85 + Math.random() * 15) + '%';    
+  star.style.opacity = 0.25;    
+  star.style.width = '1.5px';    
+  star.style.height = '1.5px';    
+  star.style.animationDelay = (Math.random() * 10).toFixed(2) + 's';    
+  star.style.animationDuration = (Math.random() * 6 + 6).toFixed(2) + 's';    
+  container.appendChild(star);    
+}
 
-🖼️ Add images in the `assets/` folder – you'll find an example of including an image in a post in `source/posts/fourth-post.md`.
+</script>    </body>
 
-![Images in a post](https://github.com/user-attachments/assets/9f5e86e1-b5dd-43f5-b826-f535ede36894)
-
-> 🚨⚠️ Danger zone: There are directories in the project that might break your site... 😱😈
->
-> * The `deploy/_site` folder is autogenerated by 11ty so best not to edit in there.
-> * The `deploy/_app` folder is autogenerated by the Fastly tooling – you should only edit in there if you want to change the Compute app you deploy to the edge.
-> * The `helpers` folder contains the bash scripts that run when your project starts and when you hit the **🚀 Publish** button.
-
-### Share your draft site 
-
-You can share links to your draft site with collaborators – click **🔗 Share** at the bottom of the editor. The terminal output will include a link you can right-click and copy to share with anyone you like! 
-
-> This project includes a handy shortcut button for grabbing your preview URL but it might be a wee bit error prone 😅 you can also access these details in **💻 Terminal** > **PORTS** or by clicking the little Forwarded Ports icon: <img src="https://github.com/user-attachments/assets/6bfc0238-a0a8-434f-9188-ff1d45df0ca0" style="height:1em" alt="ports icon"/>
->
-> Change `private` to `public` by right-clicking your running port and choosing from the options.
->
-> ![Change the port settings](https://github.com/user-attachments/assets/31802b6e-b766-4b5b-8b59-529d31fdf4ee)
->
-> Copy the URL to your clipboard and share it 📋.
-> 
-> <img alt="Copy the URL" src="https://github.com/user-attachments/assets/a4704062-29e1-45b4-91e7-02599f001967" width="600px"/>
-
-## Deploy your blog to Fastly Compute
-
-Ready to unveil your site to the world? Deploy it to Fastly!
-
-Grab a Fastly API key from your account and add it to your GitHub repo:
-
-- Sign up for a <strong><a href="https://www.fastly.com/signup/" target="_blank">free Fastly developer account</a></strong>
-- Grab an **API Token** from **Account** > **API Tokens** > **Personal Tokens** > **Create Token**
-  - _Type_: Automation
-  - _Role_: Engineer
-  - _Scope_: Global (deselect the _Read-only access_ box)
-  - _Access_: All services
-  - _Expiration_: Never expire
-- **Copy the token value into GitHub**
-  - Back in your codespace, click into the textfield at the top of the editor and type `>` to access the command palette
-  - Type `secret` and select **Codespaces: Manage user secrets**
-    - <img alt="Secret command" src="https://github.com/user-attachments/assets/a6cfeac8-2aca-40a4-ab41-d207733b61cc" width="300px"/>
-  - Click **+ Add a new secret**
-    - <img alt="Add new secret" src="https://github.com/user-attachments/assets/350e545c-0073-4327-ac99-3663049e7aad" width="400px"/>
-  - Enter the name `FASTLY_API_TOKEN`
-    - <img alt="Fastly token" src="https://github.com/user-attachments/assets/536d1b2a-bf62-4085-aac4-ade7d2898583" width="400px"/>
-  - Paste your token value and enter
-
-In the notifications area at the bottom right of your codespace, you should see a prompt to **reload** for the new environment variable, so go ahead and click that (otherwise click the little bell 🔔 icon to check for the message).
-
-Hit the **🚀 Publish** button at the bottom of the editor, enter `y` and watch the **Terminal** output for your new site address! It might take a couple of minutes... 🥁
-
-![New Compute app address in the Terminal](https://github.com/user-attachments/assets/0a5a8f84-4907-4d60-83da-d3b90e745562)
-
-You'll see your new `*.edgecompute.app` address in the output. Open it in a new tab and tell everyone you know about your new site. 📣
-
-🎢 Whenever you update your content, like adding a new blog post, hit the **🚀 Publish** button again to go live!
-
-## Save your edits to GitHub
-
-GitHub will keep the edits you make in the codespace only for a limited time, so it's a good idea to commit your work to a repo regularly. Use the **Source Control** button on the left of the editor – you can make commits, open and merge pull requests right inside the codespace. 
-
-<img alt="source control" src="https://github.com/user-attachments/assets/a5160b08-4f80-4a5f-af76-bde18a43427d" width="300px"/>
-
-> GitHub will notify you if any of your codespaces are about to expire. If you have changes you want to keep, you can use the **Export changes to a branch** option.
-> 
-> <img alt="export to branch" width="500px" src="https://github.com/user-attachments/assets/c7815347-3e5a-4e34-97f2-db58343acaa4"/>
-
-## How this project works 🧐
-
-This project uses the <a href="https://github.com/fastly/compute-js-static-publish" target="_blank">Fastly JavaScript Static Publisher</a> to turn your blog into a serverless app that runs at the network edge, near your users. 
-
-* The 11ty framework builds your posts into the HTML and other files that make up your website, placing them in the `deploy/_site` folder.
-* The Static Publisher uses those files to scaffold a Compute app that compiles into Webassembly (Wasm) to run fast and securely on the Fastly network – you'll find the Compute code in `deploy/_app` after you deploy.
-* When you publish, the project deploys the app to Fastly, creating a service and uploading the Wasm to it.
-* It then then publishes your content to a KV Store – a key-value store that also runs on Fastly and that your app can talk to.
-
-_The app itself only needs deployed to Fastly once, when you click the **🚀 Publish** button after that, we just update the content in your KV Store and your Compute app will pull your posts from there._
-
-📝 Your Fastly service and KV Store will include your GitHub username and repo in their names, so you'll only be able to deploy one Compute app per repo unless you tweak the scripts.
-
-⚙️ The settings we use to create the guided experience in the codespace are in the `.devcontainer/` folder.
-
-🧰 You'll find the Fastly CLI commands we use under the hood in the `helpers/publish.sh` script.
-
-💻 If you check the right-hand side of the **Terminal** you'll find multiple processes – this is to run the 11ty and Fastly commands.
-
-### Extensions
-
-This project uses the following extensions from the dev community! 🙌
-
-* [VSCode Action Buttons Ext](https://marketplace.visualstudio.com/items?itemName=jkearins.action-buttons-ext)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-## Keep going! 🛸
-
-**Don't stop there, <a href="https://www.fastly.com/documentation/solutions/tutorials/deliver-your-site/#sending-domain-traffic-to-fastly" target="_blank">add a domain to your new site</a>.**
-
-You'll find your service in your Fastly account control panel – check out the **Observability** stats! 📊
-
-Check out more tips on using the <a href="https://github.com/fastly/compute-js-static-publish" target="_blank">Static Publisher</a> in its `README`. Note that if you change the Compute code, you'll need to run a separate deploy command to push your changes to Fastly as the **🚀 Publish** button only deploys once, after that it just updates your KV content.
-
-🛟 Get help on the <a href="https://community.fastly.com" target="_blank">community forum</a>.
-
-<img src="https://github.com/user-attachments/assets/17a8af4a-100f-416d-a1cf-f84174262138" width="100px"/>
+</html>
